@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.c-btn04 {
+    width: myrem(20);
+    height: myrem(20);
+    background-color: #2a6eae;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; /* 中央に配置 */
+    align-items: center; /* 中央に配置 */
+    position: relative;
+    aspect-ratio: 1 / 1; /* 正円を保つためのアスペクト比 */
+    transition: transform 0.3s ease; /* 回転アニメーション */
+  
+}
+
+.c-btn04::before {
+    content: "";
+    width: 40%;
+    height: 40%;
+    background-color: white; /* 三角形の色を白に設定 */
+    clip-path: polygon(0 0, 0 100%, 80% 50%); /* 右向きの三角形 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%); /* 中央に配置 */
+  }
+  

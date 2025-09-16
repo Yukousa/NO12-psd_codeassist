@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.c-btn02 {
+    height: myrem(45);
+    border-radius: myrem(45);
+    color: $white;
+    font-size: myrem(18);
+    font-weight: bold;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    @include mq(md) {
+      height: myrem(40);
+      font-size: myrem(16);
+    }
+}
+
+.c-btn02--blue {
+    background-color: #2a6eae;
+}
+
+.c-btn02--black {
+    background-color: $black;
+}
+

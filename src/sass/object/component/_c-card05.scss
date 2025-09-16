@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.c-card05 {
+}
+
+.c-card05__title {
+  font-size: myrem(19);
+  color: #1e588f;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 1;
+  position: relative;
+ 
+ 
+}
+
+.c-card05__title::after {
+  content: "";
+  border-bottom: myrem(1) solid #1e588f;
+  width: myrem(27);
+  height: myrem(1);
+  position: absolute;
+  left: 0;
+  bottom:myrem(-12);
+
+}
+
+.c-card05__text {
+  margin-top: myrem(23);
+  font-family: $font-main;
+  font-size: myrem(14);
+  letter-spacing: -0.04em;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: myrem(16);
+    letter-spacing: -0.01em;
+    line-height: 1.7;
+  }
+
+}

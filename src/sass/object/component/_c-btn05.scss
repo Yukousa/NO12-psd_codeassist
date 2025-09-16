@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.c-btn05 {
+    width: myrem(16);
+    height: myrem(16);
+    background-color: #000; /* 背景色 */
+    clip-path: polygon(50% 15%, 100% 50%, 50% 85%, 50% 80%, 95% 50%, 50% 20%);
+    display: inline-block; /* インライン要素として表示 */
+
+  
+}

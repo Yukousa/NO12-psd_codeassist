@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.c-card01 {
+  width: myrem(100);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: #1e5a8e;
+  white-space: nowrap;
+  color: $white;
+  display: grid; /* テキスト中央寄せ */
+  place-items: center;
+  text-align: center;
+
+  letter-spacing: 0.08em;
+  font-weight: bold;
+  font-size: myrem(10);
+  position: relative;
+  border: 2px solid #fff; /* 外側の白線 */
+}
+
+.c-card01::before {
+  content: "";
+  position: absolute;
+  inset: calc(myrem(2) + myrem(2)); /* 外側と内側の間隔 */
+  border: 2px solid #fff; /* 内側の白線の太さ */
+  border-radius: 50%;
+  pointer-events: none;
+}
